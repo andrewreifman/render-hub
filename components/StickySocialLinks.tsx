@@ -3,16 +3,8 @@ import clsx from "clsx";
 import { MouseEvent } from "react";
 import Image from "next/future/image";
 
-type ImageWithDimensions = {
-  url: string;
-  dimensions: {
-    width: number;
-    height: number;
-  };
-};
-
 type Link = {
-  linkImage: ImageWithDimensions[];
+  linkImage?: { url: string; dimensions: { width: number; height: number } };
   linkAlt: string;
   linkUrl?: {
     href: string;
@@ -36,13 +28,13 @@ export function StickySocialLinks({ className, links }: Props) {
         "group fixed right-0 bottom-0 px-5 sm:px-8 py-8 z-30 box-content flex flex-col justify-center gap-4 sm:gap-5"
       )}
     >
-      {links.map((link, index, linkUrl) => {
-        if (link.linkImage == null) return <div></div>;
+      {links.map((link, i) => {
+        if (link.linkImage == null) return;
 
         return (
           <a
-            {...linkUrl}
-            key={index}
+            {...link.linkUrl}
+            key={i}
             className="relative w-6 h-6 transition-transform hover:scale-125"
           >
             <Image

@@ -2,20 +2,12 @@ import React, { ReactNode } from "react";
 import clsx from "clsx";
 import { MouseEvent } from "react";
 import Tilt from "react-parallax-tilt";
-import Image from "next/image";
-
-type ImageWithDimensions = {
-  url: string;
-  dimensions: {
-    width: number;
-    height: number;
-  };
-};
+import Image from "next/future/image";
 
 type Props = {
   className?: string;
-  image?: string;
-  imageAlt?: string;
+  image: { url: string; dimensions: { width: number; height: number } };
+  imageAlt: string;
   children?: ReactNode;
   link?: {
     href: string;
@@ -48,10 +40,11 @@ export function Hero({ className, image, imageAlt, children, link }: Props) {
         tiltReverse={true}
         className="relative w-full h-full flex flex-col justify-center [transform-style:preserve-3d]"
       >
-        <img
-          src={image}
+        <Image
+          src={image.url}
           alt={imageAlt}
-          className="w-[90vw] max-w-[1100px] absolute top-1/2 left-1/2 origin-center [transform:translate3d(-50%,-50%,-100px)] -z-10"
+          fill
+          className="w-[90vw] max-w-[1100px] object-contain object-center absolute top-1/2 left-1/2 origin-center [transform:translate3d(0,0,-100px)] -z-10"
         />
         {children}
       </Tilt>

@@ -71,7 +71,7 @@ ReactRuntime.registerComponent(Hero, {
   type: "hero",
   label: "Hero",
   props: {
-    image: Image(),
+    image: Image({ format: Image.Format.WithDimensions }),
     imageAlt: TextInput({
       label: "Image alt",
       defaultValue: "",
