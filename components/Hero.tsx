@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react";
+import { LinkValue } from "@makeswift/runtime/prop-controllers";
 import clsx from "clsx";
 import { MouseEvent } from "react";
 import Tilt from "react-parallax-tilt";
@@ -6,7 +7,7 @@ import Image from "next/future/image";
 
 type Props = {
   className?: string;
-  image: { url: string; dimensions: { width: number; height: number } };
+  image?: { url: string; dimensions: { width: number; height: number } };
   imageAlt: string;
   children?: ReactNode;
   link?: {
@@ -40,15 +41,20 @@ export function Hero({ className, image, imageAlt, children, link }: Props) {
         tiltReverse={true}
         className="relative w-full h-full flex flex-col justify-center [transform-style:preserve-3d]"
       >
-        <Image
-          src={image.url}
-          alt={imageAlt}
-          fill
-          className="w-[90vw] max-w-[1100px] object-contain object-center absolute top-1/2 left-1/2 origin-center [transform:translate3d(0,0,-100px)] -z-10"
-        />
+        <div className="w-[90vw] max-w-[1100px] h-full absolute top-1/2 left-1/2 origin-center [transform:translate3d(-50%,-50%,-100px)] -z-10">
+          {image ? (
+            <Image
+              src={image.url}
+              alt={imageAlt}
+              fill
+              className="object-contain object-center"
+            />
+          ) : (
+            <div></div>
+          )}
+        </div>
         {children}
       </Tilt>
-
       <a
         {...link}
         className="flex justify-center absolute bottom-1 sm:bottom-6 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 sm:w-20 h-12 sm:h-20 before:w-[3px] sm:before:w-1 before:h-12 sm:before:h-20 before:bg-white before:block before:transition-all before:origin-top after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1 after:w-6 sm:after:w-8 after:h-6 sm:after:h-8 after:border-b-[3px] sm:after:border-b-4 after:border-r-[3px] sm:after:border-r-4 border-white after:rotate-45 after:transition-all hover:before:h-16 sm:hover:before:h-24 hover:after:translate-y-3.5"

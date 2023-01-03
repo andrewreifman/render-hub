@@ -114,7 +114,7 @@ ReactRuntime.registerComponent(StickySocialLinks, {
             label: "Icon",
             format: Image.Format.WithDimensions,
           }),
-          linkAlt: TextInput({ label: "Icon alt text" }),
+          linkAlt: TextInput({ label: "Icon alt text", defaultValue: "" }),
           linkUrl: Link(),
         },
       }),

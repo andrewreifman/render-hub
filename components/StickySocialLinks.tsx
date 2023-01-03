@@ -37,12 +37,16 @@ export function StickySocialLinks({ className, links }: Props) {
             key={i}
             className="relative w-6 h-6 transition-transform hover:scale-125"
           >
-            <Image
-              src={link.linkImage.url}
-              alt={link.linkAlt}
-              fill
-              className="object-contain object-center"
-            />
+            {link.linkImage ? (
+              <Image
+                src={link.linkImage.url}
+                alt={link.linkAlt}
+                fill
+                className="object-contain object-center"
+              />
+            ) : (
+              <div></div>
+            )}
           </a>
         );
       })}
