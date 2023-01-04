@@ -49,6 +49,7 @@ export function Hero({ className, image, imageAlt, children, link }: Props) {
               src={image.url}
               alt={imageAlt}
               fill
+              priority
               className="object-contain object-center"
             />
           )}
