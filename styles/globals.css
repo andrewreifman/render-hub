@@ -20,7 +20,7 @@
     font-family: 'Mortend Outline';
     src: url('/fonts/Mortend-ExtraBoldOutline.woff2') format('woff2');
     font-weight: 800;
-    font-style: italic;
+    font-style: normal;
 }
 
 ::-moz-selection {
