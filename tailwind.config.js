@@ -8,8 +8,8 @@ module.exports = {
     extend: {
       keyframes: {
         animateGrid: {
-          "0%": { transform: "rotateX(50deg) translateY(-50%)" },
-          "100%": { transform: "rotateX(50deg) translateY(0)" },
+          "0%": { transform: "translateY(-50%)" },
+          "100%": { transform: "translateY(0)" },
         },
         marqueeScroll: {
           "0%": { transform: "translateX(0)" },

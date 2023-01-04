@@ -25,7 +25,7 @@ export function StickySocialLinks({ className, links }: Props) {
     <div
       className={clsx(
         className,
-        "group fixed right-0 bottom-0 px-5 sm:px-8 py-8 z-30 box-content flex flex-col justify-center gap-4 sm:gap-5"
+        "group fixed right-0 bottom-0 px-5 sm:px-8 py-8 z-30 flex flex-col items-end gap-4 sm:gap-5 pointer-events-none"
       )}
     >
       {links.map((link, i) => {
@@ -35,7 +35,7 @@ export function StickySocialLinks({ className, links }: Props) {
           <a
             {...link.linkUrl}
             key={i}
-            className="relative w-6 h-6 transition-transform hover:scale-125"
+            className="relative w-6 h-6 transition-transform hover:scale-125 pointer-events-auto"
           >
             {link.linkImage ? (
               <Image

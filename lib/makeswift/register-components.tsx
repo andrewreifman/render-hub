@@ -122,5 +122,6 @@ ReactRuntime.registerComponent(StickySocialLinks, {
         return link?.linkAlt || "Link";
       },
     }),
+    className: Style(),
   },
 });
