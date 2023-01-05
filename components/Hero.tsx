@@ -43,13 +43,13 @@ export function Hero({ className, image, imageAlt, children, link }: Props) {
         tiltReverse={true}
         className="relative w-full h-full flex flex-col justify-center [transform-style:preserve-3d]"
       >
-        <div className="w-[95vw] max-w-[1100px] h-[80vh] absolute top-1/2 left-1/2 origin-center [transform:translate3d(-50%,-50%,-100px)] -z-10 drop-shadow-[0_3px_0px_rgba(255,0,186,0.5)]">
+        <div className="w-[95vw] max-w-[1100px] h-[80vh] absolute top-1/2 left-1/2 origin-center [transform:translate3d(-50%,-50%,-100px)] -z-10">
           {image != null && (
             <Image
               src={image.url}
               alt={imageAlt}
               fill
-              priority
+              priority={true}
               className="object-contain object-center"
             />
           )}

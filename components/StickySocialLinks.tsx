@@ -42,6 +42,7 @@ export function StickySocialLinks({ className, links }: Props) {
                 src={link.linkImage.url}
                 alt={link.linkAlt}
                 fill
+                priority={true}
                 className="object-contain object-center"
               />
             ) : (
