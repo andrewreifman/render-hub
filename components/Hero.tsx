@@ -30,7 +30,7 @@ export function Hero({ className, image, imageAlt, children, link }: Props) {
     <div
       className={clsx(
         className,
-        "w-full h-screen [min-height:-webkit-fill-available] relative border-b border-[#FF00BA]"
+        "w-full h-[90vh] sm:h-screen [min-height:-webkit-fill-available] relative border-b border-[#FF00BA]"
       )}
     >
       <div className="w-full absolute top-0 inset-x-0 [transform:rotateX(180deg)]">
