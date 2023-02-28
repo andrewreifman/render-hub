@@ -2,24 +2,6 @@
 # yarn lockfile v1
 
 
-"@apollo/client@^3.5.10":
-  version "3.5.10"
-  resolved "https://registry.npmjs.org/@apollo/client/-/client-3.5.10.tgz"
-  integrity sha512-tL3iSpFe9Oldq7gYikZK1dcYxp1c01nlSwtsMz75382HcI6fvQXyFXUCJTTK3wgO2/ckaBvRGw7VqjFREdVoRw==
-  dependencies:
-    "@graphql-typed-document-node/core" "^3.0.0"
-    "@wry/context" "^0.6.0"
-    "@wry/equality" "^0.5.0"
-    "@wry/trie" "^0.3.0"
-    graphql-tag "^2.12.3"
-    hoist-non-react-statics "^3.3.2"
-    optimism "^0.16.1"
-    prop-types "^15.7.2"
-    symbol-observable "^4.0.0"
-    ts-invariant "^0.9.4"
-    tslib "^2.3.0"
-    zen-observable-ts "^1.2.0"
-
 "@babel/code-frame@^7.0.0":
   version "7.16.7"
   resolved "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.16.7.tgz"
@@ -223,11 +205,6 @@
     postcss "7.0.32"
     purgecss "^2.3.0"
 
-"@graphql-typed-document-node/core@^3.0.0":
-  version "3.1.1"
-  resolved "https://registry.npmjs.org/@graphql-typed-document-node/core/-/core-3.1.1.tgz"
-  integrity sha512-NQ17ii0rK1b34VZonlmT2QMJFI70m0TRwbknO/ihlbatXyaktDhN/98vBiUU6kNBPljqGqyIrl2T4nY2RpFANg==
-
 "@hacknug/tailwindcss-plugin-utils@^0.8.0":
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/@hacknug/tailwindcss-plugin-utils/-/tailwindcss-plugin-utils-0.8.0.tgz#927f195fddf45a0158d38cfc9cc45a85314595ba"
@@ -252,23 +229,26 @@
   resolved "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@makeswift/next-plugin@0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@makeswift/next-plugin/-/next-plugin-0.1.7.tgz#170719475fb5375e7ea4327ddf0fcfbc8f2bf7cc"
-  integrity sha512-jfnVS9E0S4uT00rxfgh9DUeBS60+v2SlQd1RTdOjWDJ8P2ae4TC2yubZ3MY8Exkwoix0pOkLJMiBv2oO3D0jGQ==
+"@makeswift/next-plugin@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@makeswift/next-plugin/-/next-plugin-0.2.0.tgz#af5969f98ca91291b778ffeeec7068678184db1a"
+  integrity sha512-KNRp/zsDVmKOfzFxkBOw0MKSxWbgVBv34mJLNivQ3zHuteDDG9x86f2mx87gH56QkFtZ9gXawaIEMnQtT7XoPw==
   dependencies:
     next-transpile-modules "^9.0.0"
+    semver "^7.3.8"
 
-"@makeswift/runtime@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@makeswift/runtime/-/runtime-0.3.1.tgz#cc80451a3397c12fbd47f7733e259e8e0fda6383"
-  integrity sha512-LG5jug3FEHY6kzCv8uKQLZ0Ee83JYrnKjzKXtaEBuDD1NsloohN3GqSUkvCva2/CVFdjSedLJn2czKyCGjh5Ng==
+"@makeswift/runtime@^0.6.7":
+  version "0.6.7"
+  resolved "https://registry.yarnpkg.com/@makeswift/runtime/-/runtime-0.6.7.tgz#dbf92f5754cc24321deeea522f57919b1435a254"
+  integrity sha512-6B+SttiPNC4sKV8Om+9fSv36PhPNz5SXEe9+Uvc3bcZITwkdbxBS0NlbGaVPrHW/vMuGpeMLKiVVh9K671fNng==
   dependencies:
-    "@apollo/client" "^3.5.10"
     "@convertkit/slate-lists" "^0.2.4"
     "@emotion/css" "^11.9.0"
+    "@emotion/serialize" "^1.0.3"
     "@emotion/server" "^11.4.0"
-    "@makeswift/next-plugin" "0.1.7"
+    "@emotion/sheet" "^1.0.3"
+    "@emotion/utils" "^1.0.0"
+    "@makeswift/next-plugin" "0.2.0"
     "@popmotion/popcorn" "^0.4.4"
     "@types/cookie" "^0.5.1"
     "@types/http-proxy" "^1.17.9"
@@ -591,27 +571,6 @@
   dependencies:
     "@typescript-eslint/types" "5.27.0"
     eslint-visitor-keys "^3.3.0"
-
-"@wry/context@^0.6.0":
-  version "0.6.1"
-  resolved "https://registry.npmjs.org/@wry/context/-/context-0.6.1.tgz"
-  integrity sha512-LOmVnY1iTU2D8tv4Xf6MVMZZ+juIJ87Kt/plMijjN20NMAXGmH4u8bS1t0uT74cZ5gwpocYueV58YwyI8y+GKw==
-  dependencies:
-    tslib "^2.3.0"
-
-"@wry/equality@^0.5.0":
-  version "0.5.2"
-  resolved "https://registry.npmjs.org/@wry/equality/-/equality-0.5.2.tgz"
-  integrity sha512-oVMxbUXL48EV/C0/M7gLVsoK6qRHPS85x8zECofEZOVvxGmIPLA9o5Z27cc2PoAyZz1S2VoM2A7FLAnpfGlneA==
-  dependencies:
-    tslib "^2.3.0"
-
-"@wry/trie@^0.3.0":
-  version "0.3.1"
-  resolved "https://registry.npmjs.org/@wry/trie/-/trie-0.3.1.tgz"
-  integrity sha512-WwB53ikYudh9pIorgxrkHKrQZcCqNM/Q/bDzZBffEaGUKGuHrRb3zZUT9Sh2qw9yogC7SsdRmQ1ER0pqvd3bfw==
-  dependencies:
-    tslib "^2.3.0"
 
 acorn-jsx@^5.3.2:
   version "5.3.2"
@@ -1786,13 +1745,6 @@ graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.4:
   resolved "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.10.tgz"
   integrity sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==
 
-graphql-tag@^2.12.3:
-  version "2.12.6"
-  resolved "https://registry.npmjs.org/graphql-tag/-/graphql-tag-2.12.6.tgz"
-  integrity sha512-FdSNcu2QQcWnM2VNvSCCDCVS5PpPqpzgFT8+GXzqJuoDd0CBncxCY278u4mhRO7tMgo2JjgJA5aZ+nWSQ/Z+xg==
-  dependencies:
-    tslib "^2.1.0"
-
 graphql@^16.3.0:
   version "16.4.0"
   resolved "https://registry.npmjs.org/graphql/-/graphql-16.4.0.tgz"
@@ -1844,7 +1796,7 @@ hey-listen@^1.0.5, hey-listen@^1.0.8:
   resolved "https://registry.npmjs.org/hey-listen/-/hey-listen-1.0.8.tgz"
   integrity sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==
 
-hoist-non-react-statics@^3.3.0, hoist-non-react-statics@^3.3.2:
+hoist-non-react-statics@^3.3.0:
   version "3.3.2"
   resolved "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz"
   integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
@@ -2471,14 +2423,6 @@ once@^1.3.0:
   dependencies:
     wrappy "1"
 
-optimism@^0.16.1:
-  version "0.16.1"
-  resolved "https://registry.npmjs.org/optimism/-/optimism-0.16.1.tgz"
-  integrity sha512-64i+Uw3otrndfq5kaoGNoY7pvOhSsjFEN4bdEFh80MWVk/dbgJfMv7VFDeCT8LxNAlEVhQmdVEbfE7X2nWNIIg==
-  dependencies:
-    "@wry/context" "^0.6.0"
-    "@wry/trie" "^0.3.0"
-
 optionator@^0.9.1:
   version "0.9.1"
   resolved "https://registry.npmjs.org/optionator/-/optionator-0.9.1.tgz"
@@ -2976,6 +2920,13 @@ semver@^7.3.7:
   dependencies:
     lru-cache "^6.0.0"
 
+semver@^7.3.8:
+  version "7.3.8"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.3.8.tgz#07a78feafb3f7b32347d725e33de7e2a2df67798"
+  integrity sha512-NB1ctGL5rlHrPJtFDVIVzTyQylMLu9N9VICA6HSFJo8MCGVTMW6gfpicwKmmK/dAjTOrqu5l63JJOpDSrAis3A==
+  dependencies:
+    lru-cache "^6.0.0"
+
 set-cookie-parser@^2.5.1:
   version "2.5.1"
   resolved "https://registry.npmjs.org/set-cookie-parser/-/set-cookie-parser-2.5.1.tgz"
@@ -3245,11 +3196,6 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-symbol-observable@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.npmjs.org/symbol-observable/-/symbol-observable-4.0.0.tgz"
-  integrity sha512-b19dMThMV4HVFynSAM1++gBHAbk2Tc/osgLIBZMKsyqh34jb2e8Os7T6ZW/Bt3pJFdBTd2JwAnAAEQV7rSNvcQ==
-
 tailwindcss-text-fill-stroke@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/tailwindcss-text-fill-stroke/-/tailwindcss-text-fill-stroke-1.1.2.tgz#d46934745112ffa547a096fca29130cd409bba9c"
@@ -3364,13 +3310,6 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
-ts-invariant@^0.9.4:
-  version "0.9.4"
-  resolved "https://registry.npmjs.org/ts-invariant/-/ts-invariant-0.9.4.tgz"
-  integrity sha512-63jtX/ZSwnUNi/WhXjnK8kz4cHHpYS60AnmA6ixz17l7E12a5puCWFlNpkne5Rl0J8TBPVHpGjsj4fxs8ObVLQ==
-  dependencies:
-    tslib "^2.1.0"
-
 tsconfig-paths@^3.14.1:
   version "3.14.1"
   resolved "https://registry.npmjs.org/tsconfig-paths/-/tsconfig-paths-3.14.1.tgz"
@@ -3386,7 +3325,7 @@ tslib@^1.10.0, tslib@^1.8.1:
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
-tslib@^2.1.0, tslib@^2.3.0, tslib@^2.4.0:
+tslib@^2.1.0, tslib@^2.4.0:
   version "2.4.0"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.4.0.tgz"
   integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==
@@ -3529,15 +3468,3 @@ yaml@^1.10.2, yaml@^1.7.2:
   version "1.10.2"
   resolved "https://registry.npmjs.org/yaml/-/yaml-1.10.2.tgz"
   integrity sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==
-
-zen-observable-ts@^1.2.0:
-  version "1.2.3"
-  resolved "https://registry.npmjs.org/zen-observable-ts/-/zen-observable-ts-1.2.3.tgz"
-  integrity sha512-hc/TGiPkAWpByykMwDcem3SdUgA4We+0Qb36bItSuJC9xD0XVBZoFHYoadAomDSNf64CG8Ydj0Qb8Od8BUWz5g==
-  dependencies:
-    zen-observable "0.8.15"
-
-zen-observable@0.8.15:
-  version "0.8.15"
-  resolved "https://registry.npmjs.org/zen-observable/-/zen-observable-0.8.15.tgz"
-  integrity sha512-PQ2PC7R9rslx84ndNBZB/Dkv8V8fZEpk83RLgXtYd0fwUgEjseMn1Dgajh2x6S8QbZAFa9p2qVCEuYZNgve0dQ==

@@ -13,6 +13,7 @@ type Props = {
     target?: "_self" | "_blank";
   };
   text?: string;
+  viewText?: string;
   size: Size;
 };
 
@@ -21,6 +22,7 @@ export function CaseStudyCard({
   backgroundImage,
   link,
   text,
+  viewText,
   size,
 }: Props) {
   return (
@@ -46,7 +48,7 @@ export function CaseStudyCard({
         className={clsx(
           {
             large:
-              "-bottom-5 sm:-bottom-9 md:-bottom-12 left-5 sm:left-8 md:left-12",
+              "-bottom-10 sm:-bottom-9 md:-bottom-12 left-4 sm:left-8 md:left-12",
             small: "-bottom-6 md:-bottom-8 left-5",
           }[size],
           "absolute inline-block bg-clip-text text-transparent bg-gradient-to-r from-white to-white bg-[size:100%_0%] bg-no-repeat bg-bottom transition-all duration-150 group-hover:bg-[size:100%_100%]"
@@ -55,6 +57,9 @@ export function CaseStudyCard({
         <h3 className="w-9/12 inline-block uppercase leading-none text-stroke sm:text-stroke-2 text-stroke-white transition-all group-hover:text-stroke-transparent">
           {text}
         </h3>
+        <p className="block sm:hidden text-white text-base mt-.5 font-bold">
+          {viewText}
+        </p>
       </span>
     </a>
   );

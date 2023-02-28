@@ -49,8 +49,12 @@ ReactRuntime.registerComponent(CaseStudyCard, {
   label: "Case Study Card",
   props: {
     text: TextInput({
-      label: "Text",
-      defaultValue: "Text",
+      label: "Header",
+      defaultValue: "Case Study",
+    }),
+    viewText: TextInput({
+      label: "Subtext (mobile)",
+      defaultValue: "View case study",
     }),
     link: Link({ label: "On click" }),
     backgroundImage: Image({ label: "Image" }),
